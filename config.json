@@ -1,0 +1,117 @@
+{
+    "bot": {
+        "permissions": "8",
+        "application_id": "1138058325003616297",
+        "scopes": [
+            "bot",
+            "applications.commands"
+        ]
+    },
+    "voice": {
+        "category_id": 1226094589039869962,
+        "lobby_channel_id": 1226100423182651522,
+        "lobby_name": "➕ 새로운 음성채널",
+        "settings": {
+            "max_channels": 10,
+            "channel_limit": 5,
+            "afk_timeout": 300,
+            "auto_disconnect": true,
+            "auto_disconnect_delay": 300,
+            "channel_format": "🔊 {owner}의 채널"
+        }
+    },
+    "ticket": {
+        "category_id": 1226096452401496135,
+        "channel_id": 1226096749932839002,
+        "settings": {
+            "max_tickets_per_user": 3,
+            "auto_close_after": 72,
+            "require_reason": true
+        }
+    },
+    "combat_system": {
+        "enabled": true,
+        "roles": {
+            "commander": 1245645088600887297,
+            "officer": 1227130808939057163,
+            "soldier": 1227130564830691378
+        },
+        "channels": {
+            "combat_logs": 1250762468804792411,
+            "combat_announcements": 1226094589039869964
+        },
+        "settings": {
+            "min_participants": 4,
+            "max_team_size": 10,
+            "auto_clear_inactive": true,
+            "inactive_timeout": 3600,
+            "confirmation_timeout": 300,
+            "dm_notifications": true
+        },
+        "unit_types": {
+            "archer": "🏹궁병",
+            "shield": "🛡️모루",
+            "hammer": "⚔️망치",
+            "cavalry": "🐎기병",
+            "mounted_archer": "🏇궁기병"
+        }
+    },
+    "roles": {
+        "admin": [
+            1227130221824704533,
+            1245645088600887297
+        ],
+        "moderator": [],
+        "verified": [
+            1305056915969015838,
+            1227130582665007135
+        ]
+    },
+    "channels": {
+        "log": 1226096663853268992,
+        "admin": 1226096781918605312,
+        "welcome": null,
+        "rules": null,
+        "music_commands": null,
+        "influence": 1274574812974546996,
+        "influence_log": 1274575050431004764
+    },
+    "guild_id": 1226094587941097542,
+    "settings": {
+        "prefix": "!",
+        "language": "ko",
+        "timezone": "Asia/Seoul",
+        "cooldowns": {
+            "commands": 3,
+            "songs": 3
+        },
+        "restrictions": {
+            "max_songs_per_user": 5,
+            "max_duplicate_songs": 2,
+            "blacklisted_urls": []
+        }
+    },
+    "messages": {
+        "welcome": "환영합니다 {user}님!",
+        "no_permission": "⛔ 이 명령어를 사용할 권한이 없습니다.",
+        "cooldown": "⏳ {time}초 후에 다시 시도해주세요.",
+        "error": "❌ 오류가 발생했습니다: {error}",
+        "combat": {
+            "no_permission": "⛔ 모의전 명령어를 사용할 권한이 없습니다.",
+            "team_created": "✅ 팀이 생성되었습니다.",
+            "joined": "✅ 모의전에 참가했습니다.",
+            "waiting": "⏳ 대기자 명단에 추가되었습니다.",
+            "absent": "❌ 불참자 명단에 추가되었습니다.",
+            "info_saved": "💾 전투 정보가 저장되었습니다.",
+            "min_participants": "⚠️ 최소 {min_participants}명의 참가자가 필요합니다.",
+            "confirmation_sent": "🔔 확인 메시지가 전송되었습니다.",
+            "confirmation_received": "✅ 참가가 확정되었습니다."
+        }
+    },
+    "logging": {
+        "enabled": true,
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "file": "bot.log"
+    }
+}
